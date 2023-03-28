@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Online Store</title>
+        <meta name="Viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="https://connexstore.co.za/img/favicon.ico?1671096750">
+        <script src="https://kit.fontawesome.com/6ec803ee91.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="StoreCss.css">
+    </head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo">
+                <img src="Random pics/logo-1671096750.jpg">
+            </div>
+            <div class="search bar">
+                <input type="text" placeholder="search...">
+            </div>
+            <div class="cart">
+                <button class="cart-button">Cart:0 products</button>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+
+                <li><a href="#">home</a></li> 
+                <li>
+                    <a href="#">Electronics</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">furniture</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">gardening</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">power tools</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">lighting</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Smartphones</a>
+                    <ul class="dropdown">
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                        <li><a href="#">cables</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="section1">
+    <div class="Red">
+        <h3 class="Catagories">Catagories</h3>
+        <button class="collapsible">Gaming</button>
+        <ul class="content">
+            <li>Xbox</li>
+            <li>Playstation</li>
+            <li>PC</li>
+        </ul>
+        <button class="collapsible">Automation</button>
+        <ul class="content">
+            <li>Motherboards</li>
+            <li>Motors</li>
+            <li>Sensors</li>
+        </ul>
+        <button class="collapsible">Beauty & Personal Care</button>
+        <ul class="content">
+            <li>Makeup</li>
+            <li>Lipgloss</li>
+            <li>Eye shadow</li>
+            <li>Body Wash</li>
+        </ul>
+        <button class="collapsible">Power Tools</button>
+        <ul class="content">
+            <li>stanley</li>
+            <li>Ryobi</li>
+            <li>Mitsubishi</li>
+            <li>Other</li>
+        </ul>
+        <button class="collapsible">Laptops</button>
+        <ul class="content">
+            <li>Apple</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Other</li>
+        </ul>
+        <button class="coll1">Laptop Accessories</button>
+        <button class="collapsible">Electronics</button>
+        <ul class="content">
+            <li>Circuits</li>
+            <li>Cat 5 cables</li>
+            <li>Huawei routers</li>
+            <li>Other</li>
+        </ul>
+        <button class="coll1">Engraving Machines</button>
+        <button class="collapsible">Pool Accessories</button>
+        <ul class="content">
+            <li>Crawlers</li>
+            <li>Pool cleaner</li>
+            <li>Hydrochloric acid</li>
+            <li>Other</li>
+        </ul>
+        <button class="coll1">Daily Deals</button>
+        <button class="coll1">Software</button>
+        <button class="collapsible">Smart Home</button>
+        <ul class="content">
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Other</li>
+        </ul>
+        <button class="collapsible">Smartphones</button>
+        <ul class="content">
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Other</li>
+        </ul>
+        <button class="coll1">Printers</button>
+        <button class="collapsible">Fashion & Luggage</button>
+        <ul class="content">
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Other</li>
+        </ul>
+        <button class="collapsible">Entertainment</button>
+        <ul class="content">
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Other</li>
+        </ul>
+        <button class="coll1">Brand Sale</button>
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+    <div class="slider-frame">
+        <div class="slide-imgs">
+            <div class="img-container">
+                <img src="Random pics/photo-1524758631624-e2822e304c36.jfif">
+            </div>
+            <div class="img-container">
+                <img src="Random pics/Drupal_Large-ST_V20-ToolRange_G2 (2).jpg">
+            </div>
+            <div class="img-container">
+                <img src="Random pics/laptop-from-above (2).jpg">
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="container-item">
+            <img src="Random pics/download.jfif">
+            <h4>gaming</h4>
+            <button>See more</button>
+        </div>
+        <div class="container-item">
+            <img src="Random pics/download.png">
+            <h4>laptops</h4>
+            <button>See more</button>
+        </div>
+        <div class="container-item">
+            <img src="Random pics/download (1).jfif">
+            <h4>furniture</h4>
+            <button>See more</button>
+        </div>
+        <div class="container-item">
+            <img src="Random pics/download (2).jfif">
+            <h4>Smartphones</h4>
+            <button>See more</button>
+        </div>
+        <div class="container-item">
+            <img src="Random pics/download (3).jfif">
+            <h4>Drills</h4>
+            <button>See more</button>
+        </div>
+    </div>   
+</div>
+    
+<div class="section2">  
+    <div class="ads">
+    <img src="Random pics/img1.png">
+    <img src="Random pics/img2.png">
+    <img src="Random pics/img3.jpg">
+    </div>
+    <div class="items">
+    <h4 class="showcase-heading">Hand tools & Tool boxes</h4>
+    <div class="showcase">
+    <div class="showcase-items">
+        <img src="Random pics/028001L_1.jpg" alt="">
+        <p>plastic stanley tool case</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/43-524_1.jpg" alt="">
+        <p>30cm stainless steel spirit level</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/Drupal_Small-STHT10479-0_4.jpg" alt="">
+        <p>6cm stanley boxcutter</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/Drupal_Small-51-163_5.jpg" alt="">
+        <p>multi-purpose hammer</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/Drupal_Small-33-725_1.jpg" alt="">
+        <p>25' measuring tape</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    </div>
+    <h4 class="showcase-heading">Laptop Sale</h4>
+    <div class="showcase">
+    <div class="showcase-items">
+        <p class="red">20% off!!</p>
+        <img src="Random pics/hp.jpg" alt="">
+        <p>Hp workline 20</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price"> <s>$15,000</s><br>$12,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <p class="red">20% off!!</p>
+        <img src="Random pics/jumper.jpg" alt="">
+        <p>Jumper ultimate</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price"><s>$15,000</s><br>$12,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <div class="img-sale">
+            <p class="red">20% off!!</p>
+            <img src="Random pics/lenovo.jpg" alt="">
+        </div>
+        <p>Lenovo core7 </p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price"><s>$15,000</s><br>$12,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <div>
+            <p class="red">20% off!!</p>
+            <img src="Random pics/huawei.jpg" alt="">
+        </div>
+        <p>Huawei e86 proline</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price"><s>$15,000</s><br>$12,000</p>
+        
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <div class="img-sale">
+            <p class="red">20% off!!</p>
+            <img src="Random pics/samsung.jpg" alt="">
+        </div>
+        <p>Samnsung g57</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price"><s>$15,000</s><br>$12,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    </div>
+    <h4 class="showcase-heading">Smartphones</h4>
+    <div class="showcase">
+    <div class="showcase-items">
+        
+        <img src="Random pics/motorola.jpg" alt="">
+        <p>motorola g7 scout pro</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/realme.jpg" alt="">
+        <p>Realme 8 pro</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/samsung (1).jpg" alt="">
+        <p>Samsung s33 E</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/huawei (1).jpg" alt="">
+        <p>Huawei g56 ultimate</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-ban"></i>
+            <p>not stocked</p>
+        </div>
+    </div>
+    <div class="showcase-items">
+        <img src="Random pics/apple.jpg">
+        <p>Iphone 13 pro</p>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="price">$15,000</p>
+        <button>Add to cart</button>
+        <div class="stock">
+            <i class="fa-solid fa-check"></i> 
+            <p>instock</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="section3">
+    <div class="C2">
+        <h4>clothing catagories</h4>
+        <div class="clothing">
+            <div class="arrow1">
+
+            </div>
+            <div>
+                <img src="Random pics/SNEAKER_GUIDE_JORDANS_1 (2).jpg" alt="">
+                <p>Sneakerss</p>
+            </div>
+            <div>
+                <img src="Random pics/makeup.jfif" alt="">
+                <p>Beauty</p>
+            </div>
+            <div>
+                <img src="Random pics/dress.jpg" alt="">
+                <p>Dresses</p>
+            </div>
+            <div>
+                <img src="Random pics/Trousers-colourisolated.jpg" alt="">
+                <p>Bottoms</p>
+            </div>
+            <div class="arrow2">
+                
+            </div>
+        </div>
+    </div>
+    <div class="service-icons">
+        <div>
+            <i class="fa-solid fa-truck-fast"></i>
+            <h5>Product Return</h5>
+            <p>30 days for return</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-rotate-left"></i>
+            <h5>Free Shipping</h5>
+            <p>For purchases over $499.99</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-lock"></i>
+            <h5>Safe Payment</h5>
+            <p>Safe shopping guarentee</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-comments"></i>
+            <h5>Support 24/7</h5>
+            <p>Always feedback</p>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="footer-top">
+        <h4>Connex Store</h4>
+        <div class="email">
+            <input type="email" placeholder="example-email@ghost.com">
+        </div>
+        <div class="footer-button">
+            <button>Sign-in</button>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-section-wrapper">
+            <div class="footer-section">
+                <h2 class="footer-catagory">Account</h2>
+                <nav class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Create Account</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Customer Care</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Account Details</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Returns & Exchanges</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Notification settings</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-catagory">Client concierge</h2>
+                <nav class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Payment Options</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Delivery Options</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Click & Collect</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Returns Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-catagory">The company</h2>
+                <nav class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Updates</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-catagory">takealot group</h2>
+                <nav class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">Packaging</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Delivery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link"></a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-info">
+            <a href="#" class="footer-title">
+                <span>Connex Store</span>
+            </a>
+            <p class="footer-tagline">Where all general items can be found</p>
+            <div class="app-buttons">
+                <a href="#">
+                    <button>
+                        <i class="fa-brands fa-google-play"></i>
+                        <p>Download on the <br><span>App Store</span></p>
+                    </button>
+                </a>
+                <a href="#">
+                    <button>
+                        <i class="fa-brands fa-apple"></i>
+                        <p>Get it on<br> <span>Google Play</span></p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p class="footer-copyright">©2023 Connex Store</p>
+            <div class="footer-social">
+                <a href="#" class="footer-social-icon">
+                    <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" class="footer-social-icon">
+                    <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+                <a href="#" class="footer-social-icon">
+                    <svg fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                </a>
+                <a href="#" class="footer-social-icon">
+                    <img src="Random pics/user.png" style="height: 19px; width: 19px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</html>
